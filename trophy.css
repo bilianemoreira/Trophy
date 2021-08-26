@@ -58,7 +58,7 @@ body {
 
 .base {
     width: 300px;
-    height: 50px;
+    height: 70px;
     background-color: black;
     position: absolute;
     left: 50%;
@@ -68,12 +68,12 @@ body {
 
 .base2 {
     width: 450px;
-    height: 70px;
+    height: 90px;
     background-color: black;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: 470px;
+    top: 490px;
 }
 
 .base3 {
@@ -83,7 +83,7 @@ body {
     height: 0;
     width: 520px;
     position: absolute;
-    top: 540px;
+    top: 560px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -92,12 +92,12 @@ p {
     font-family: 'Parisienne', cursive;
     color: white;
     text-align: center;
-    font-size: xx-large;
-    padding-top: 5%;
+    font-size: 2.5rem;
+    padding-top: 3%;
 }
 
 #name {
     color: goldenrod;
     padding-top: 25%;
-    font-size: 3rem;
+    font-size: 4em;
 }
