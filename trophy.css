@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('cameron.jpg');
+    background-size: 5%;
+}
+
+.container {
+    width: 30%;
+    height: 100%;
+    margin: 10% auto;
+    border: 1px solid red;
+    position: relative;
+}
+
+.handles {
+  height: 150px;
+  border: goldenrod 20px solid;
+  background: transparent;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 350px;
+  transform: translate(-50%);
+}
+
+.bowl {
+  height: 250px;
+  width: 250px;
+  background-color:gold;
+  border-radius: 0 0 30% 30% / 0 0 100% 100%;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.foot {
+    border-bottom: 120px solid gold;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 300px;
+  }
+
+.base {
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 420px;
+}
+
+.base2 {
+    width: 450px;
+    height: 70px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 470px;
+}
+
+.base3 {
+    border-bottom: 20px solid black;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    height: 0;
+    width: 520px;
+    position: absolute;
+    top: 540px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+p {
+    font-family: 'Parisienne', cursive;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 5%;
+}
+
+#name {
+    color: goldenrod;
+    padding-top: 25%;
+    font-size: 3rem;
+}
