@@ -1,21 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Mali:wght@500&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url('cameron.jpg');
-    background-size: 5%;
+  background-image: url("cameron.jpg");
+  background-size: 10%;
+}
+
+.title {
+  width: 100%;
+  height: 7.8rem;
+  background-color: black;
+  color: aliceblue;
+  font-family: "Mali", cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 3%;
+  z-index: 0;
+  position: relative;
 }
 
 .container {
-    width: 30%;
-    height: 100%;
-    margin: 25vh auto;
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
+  width: 30%;
+  height: 100%;
+  margin: 25vh auto;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .handles {
@@ -36,7 +51,7 @@ body {
 .bowl {
   height: 250px;
   width: 250px;
-  background-color:gold;
+  background-color: gold;
   border-radius: 0 0 30% 30% / 0 0 100% 100%;
   position: absolute;
   top: 50px;
@@ -45,59 +60,161 @@ body {
 }
 
 .foot {
-    border-bottom: 120px solid gold;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    height: 0;
-    width: 100px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 300px;
-  }
+  border-bottom: 120px solid gold;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 300px;
+}
 
 .base {
-    width: 300px;
-    height: 70px;
-    background-color: black;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 420px;
+  width: 300px;
+  height: 70px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 420px;
+}
+
+.base p {
+  font-family: "Delius Unicase", cursive;
 }
 
 .base2 {
-    width: 450px;
-    height: 90px;
-    background-color: black;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 490px;
+  width: 450px;
+  height: 90px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 490px;
 }
 
 .base3 {
-    border-bottom: 20px solid black;
-    border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    height: 0;
-    width: 520px;
-    position: absolute;
-    top: 560px;
-    left: 50%;
-    transform: translate(-50%);
+  border-bottom: 20px solid black;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  height: 0;
+  width: 520px;
+  position: absolute;
+  top: 560px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 p {
-    font-family: 'Parisienne', cursive;
-    color: white;
-    text-align: center;
-    font-size: 2.5rem;
-    padding-top: 3%;
+  font-family: "Parisienne", cursive;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 3%;
 }
 
 #name {
-    color: goldenrod;
-    padding-top: 25%;
-    font-size: 4em;
+  color: goldenrod;
+  padding-top: 25%;
+  font-size: 4em;
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+#confettis {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.confetti {
+  left: 50%;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  transform-origin: left top;
+  animation: confetti 4s ease-in-out -3s infinite;
+}
+
+@keyframes confetti {
+  0% {
+    transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+  }
+  25% {
+    transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+  }
+  50% {
+    transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh);
+  }
+  75% {
+    transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh);
+  }
+  100% {
+    transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh);
+  }
+}
+.confetti:nth-child(1) {
+  left: 10%;
+  animation-delay: 0;
+  background-color: #fc0120;
+}
+
+.confetti:nth-child(2) {
+  left: 20%;
+  animation-delay: -5s;
+  background-color: #8257e6;
+}
+
+.confetti:nth-child(3) {
+  left: 30%;
+  animation-delay: -3s;
+  background-color: #8604ff;
+}
+
+.confetti:nth-child(4) {
+  left: 40%;
+  animation-delay: -2.5s;
+  background-color: #fb00ff;
+}
+
+.confetti:nth-child(5) {
+  left: 50%;
+  animation-delay: -4s;
+  background-color: #45ec9c;
+}
+
+.confetti:nth-child(6) {
+  left: 60%;
+  animation-delay: -6s;
+  background-color: #f6e327;
+}
+
+.confetti:nth-child(7) {
+  left: 70%;
+  animation-delay: -1.5s;
+  background-color: #ff003c;
+}
+
+.confetti:nth-child(8) {
+  left: 80%;
+  animation-delay: -2s;
+  background-color: #2cdfff;
+}
+
+.confetti:nth-child(9) {
+  left: 90%;
+  animation-delay: -3.5s;
+  background-color: #0088ff;
+}
+
+.confetti:nth-child(10) {
+  left: 100%;
+  animation-delay: -2.5s;
+  background-color: #ff440c;
 }
